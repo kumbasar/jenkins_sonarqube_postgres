@@ -20,3 +20,8 @@ db:
   environment:
    - POSTGRES_USER=sonar
    - POSTGRES_PASSWORD=sonar
+artifactory:
+  container_name: 'artifactory'
+  image: docker.bintray.io/jfrog/artifactory-oss:latest
+  ports:
+   - "8081:8081"
